@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Finance</title>
-  <script defer src="index.42b7c4dbd62a681c3c79.js"></script><link href="index.42b7c4dbd62a681c3c79.css" rel="stylesheet"></head>
+  <script defer src="index.3294c56cf7fa72679629.js"></script><link href="index.3294c56cf7fa72679629.css" rel="stylesheet"></head>
   <body class="bg-dark">
     <div class="container mx-auto px-4">
       <!-- 上半部 -->
@@ -234,8 +234,50 @@
 
         <!-- right -->
         <div class="w-full mt-4 lg:w-[25%] lg:ml-4">
-          <div class="bg-card w-full rounded-md p-4 h-[200px]"></div>
-          <div class="bg-card w-full rounded-md p-4 h-[300px] mt-4"></div>
+          <!-- 下單區 -->
+          <div class="bg-card w-full rounded-md p-4">
+            <div class="flex items-center">
+              <p class="text-white text-2xl font-bold">AAPL</p>
+              <p class="text-green-500 ml-4">+50%</p>
+            </div>
+            <p class="text-white">171.16</p>
+            <input
+              type="text"
+              class="w-full h-[50px] mt-4 bg-gray-700 border-transparent rounded-md text-white"
+              placeholder="Price" 
+            />
+            <input 
+              type="text"
+              class="w-full h-[50px] mt-4 bg-gray-700 border-transparent rounded-md text-white"
+              placeholder="Amount" 
+            >
+            <div class="flex mt-4 justify-between">
+              <button
+                class="w-[48%] h-[50px] rounded-md bg-green-500 flex justify-center items-center text-white"
+              >
+                BUY
+              </button>
+              <button
+              class="w-[48%] h-[50px] rounded-md bg-red-500 flex justify-center items-center text-white"
+              >
+                SELL
+              </button>
+            </div>
+          </div>
+          <!-- NEWS -->
+          <div class="bg-card w-full rounded-md p-4 mt-4">
+            <P class="text-white text-2xl font-bold">NEWS</P>
+
+            <P class="text-white font-bold mt-4">APPLE COMPANY</P>
+            <P class="text-gray-500 text-sm">balablalalal balalalala</P>
+            
+            <P class="text-white font-bold mt-4">APPLE COMPANY</P>
+            <P class="text-gray-500 text-sm">balablalalal balalalala</P>
+            
+            <P class="text-white font-bold mt-4">APPLE COMPANY</P>
+            <P class="text-gray-500 text-sm">balablalalal balalalala</P>
+            <button class="w-full mt-8 h-[50px] text-white text-sm  rounded-md">More</button>
+          </div>
         </div>
       </div>
     </div>
