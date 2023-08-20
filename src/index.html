@@ -18,7 +18,9 @@
           <li class="mr-6 font-bold cursor-pointer text-sm">TRADE</li>
           <li class="mr-6 font-bold cursor-pointer text-sm">ACCOUNT</li>
           <li>
-            <div class="bg-gray-400 rounded-full w-[40px] h-[40px] flex justify-center items-center">
+            <div
+              class="bg-gray-400 rounded-full w-[40px] h-[40px] flex justify-center items-center"
+            >
               B
             </div>
           </li>
@@ -28,23 +30,214 @@
       <div class="flex flex-wrap lg:flex-nowrap">
         <!-- left -->
         <div class="w-full lg:w-[75%]">
-          <div class="w-full h-[100px] flex mt-4 overflow-x-scroll bg-card"></div>
-          <div class="h-[500px] bg-card mt-4 p-4 shadow-2xl rounded-md"></div>
-          <div class="h-[300px] bg-card mt-4 p-4 shadow-2xl rounded-md overflow-scroll "></div>
+          <!-- 導覽列 -->
+          <div class="w-full flex mt-4 overflow-x-hidden hover:overflow-x-auto">
+            <div
+              class="flex-none box-border mr-4 p-4 flex flex-col justify-between w-[200px] h-[100px] bg-card shadow-2xl rounded-md"
+            >
+              <p class="text-white text-2xl font-bold">GOOGL</p>
+              <p class="flex justify-between">
+                <span class="text-white"> 171.16</span>
+                <span class="text-green-500">+50%</span>
+              </p>
+            </div>
+            <div
+              class="flex-none box-border mr-4 p-4 flex flex-col justify-between w-[200px] h-[100px] bg-card shadow-2xl rounded-md"
+            >
+              <p class="text-white text-2xl font-bold">GOOGL</p>
+              <p class="flex justify-between">
+                <span class="text-white"> 171.16</span>
+                <span class="text-green-500">+50%</span>
+              </p>
+            </div>
+            <div
+              class="flex-none box-border mr-4 p-4 flex flex-col justify-between w-[200px] h-[100px] bg-card shadow-2xl rounded-md"
+            >
+              <p class="text-white text-2xl font-bold">GOOGL</p>
+              <p class="flex justify-between">
+                <span class="text-white"> 171.16</span>
+                <span class="text-green-500">+50%</span>
+              </p>
+            </div>
+            <div
+              class="flex-none box-border mr-4 p-4 flex flex-col justify-between w-[200px] h-[100px] bg-card shadow-2xl rounded-md"
+            >
+              <p class="text-white text-2xl font-bold">GOOGL</p>
+              <p class="flex justify-between">
+                <span class="text-white"> 171.16</span>
+                <span class="text-green-500">+50%</span>
+              </p>
+            </div>
+            <div
+              class="flex-none box-border mr-4 p-4 flex flex-col justify-between w-[200px] h-[100px] bg-card shadow-2xl rounded-md"
+            >
+              <p class="text-white text-2xl font-bold">GOOGL</p>
+              <p class="flex justify-between">
+                <span class="text-white"> 171.16</span>
+                <span class="text-green-500">+50%</span>
+              </p>
+            </div>
+            <div
+              class="flex-none box-border mr-4 p-4 flex flex-col justify-between w-[200px] h-[100px] bg-card shadow-2xl rounded-md"
+            >
+              <p class="text-white text-2xl font-bold">GOOGL</p>
+              <p class="flex justify-between">
+                <span class="text-white"> 171.16</span>
+                <span class="text-green-500">+50%</span>
+              </p>
+            </div>
+            <div
+              class="flex-none box-border mr-4 p-4 flex flex-col justify-between w-[200px] h-[100px] bg-card shadow-2xl rounded-md"
+            >
+              <p class="text-white text-2xl font-bold">GOOGL</p>
+              <p class="flex justify-between">
+                <span class="text-white"> 171.16</span>
+                <span class="text-green-500">+50%</span>
+              </p>
+            </div>
+            <div
+              class="flex-none box-border mr-4 p-4 flex flex-col justify-between w-[200px] h-[100px] bg-card shadow-2xl rounded-md"
+            >
+              <p class="text-white text-2xl font-bold">GOOGL</p>
+              <p class="flex justify-between">
+                <span class="text-white"> 171.16</span>
+                <span class="text-green-500">+50%</span>
+              </p>
+            </div>
+          </div>
+          <!-- 股票交易圖表 -->
+          <div class="w-full h-[500px] bg-card mt-4 p-4 shadow-2xl rounded-md">
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+              <div class="tradingview-widget-container__widget"></div>
+              <div class="tradingview-widget-copyright">
+                <a
+                  href="https://tw.tradingview.com/"
+                  rel="noopener nofollow"
+                  target="_blank"
+                  ><span class="blue-text">追蹤TradingView上的所有市場</span></a
+                >
+              </div>
+              <script
+                type="text/javascript"
+                src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js"
+                async
+              >
+                  {
+                  "symbols": [
+                    [
+                      "Apple",
+                      "AAPL|1D"
+                    ],
+                    [
+                      "Google",
+                      "GOOGL|1D"
+                    ],
+                    [
+                      "Microsoft",
+                      "MSFT|1D"
+                    ]
+                  ],
+                  "chartOnly": false,
+                  "width": "100%",
+                  "height": "100%",
+                  "locale": "zh_TW",
+                  "colorTheme": "dark",
+                  "autosize": true,
+                  "showVolume": false,
+                  "showMA": false,
+                  "hideDateRanges": false,
+                  "hideMarketStatus": false,
+                  "hideSymbolLogo": false,
+                  "scalePosition": "right",
+                  "scaleMode": "Normal",
+                  "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+                  "fontSize": "10",
+                  "noTimeScale": false,
+                  "valuesTracking": "1",
+                  "changeMode": "price-and-percent",
+                  "chartType": "area",
+                  "maLineColor": "#2962FF",
+                  "maLineWidth": 1,
+                  "maLength": 9,
+                  "backgroundColor": "rgba(255, 255, 255, 0)",
+                  "widgetFontColor": "rgba(255, 255, 255, 1)",
+                  "lineWidth": 2,
+                  "lineType": 0,
+                  "dateRanges": [
+                    "1d|1",
+                    "1m|30",
+                    "3m|60",
+                    "12m|1D",
+                    "60m|1W",
+                    "all|1M"
+                  ],
+                  "upColor": "#22ab94",
+                  "downColor": "#f7525f",
+                  "borderUpColor": "#22ab94",
+                  "borderDownColor": "#f7525f",
+                  "wickUpColor": "#22ab94",
+                  "wickDownColor": "#f7525f"
+                }
+              </script>
+            </div>
+            <!-- TradingView Widget END -->
+          </div>
+          <!-- 交易歷史紀錄 -->
+          <div
+            class="bg-card mt-4 p-4 shadow-2xl rounded-md overflow-hidden hover:overflow-auto"
+          >
+            <table class="table-fixed text-white w-full">
+              <thead>
+                <tr>
+                  <th>Stock</th>
+                  <th>Price</th>
+                  <th>Operation</th>
+                  <th>Date</th>
+                </tr>
+              </thead>
+              <tbody class="text-sm">
+                <tr class="h-[40px]">
+                  <td class="w-1/4 text-center">AAPL</td>
+                  <td class="w-1/4 text-center">190</td>
+                  <td class="w-1/4 text-center text-red-500">SELL</td>
+                  <td class="w-1/4 text-center">2121/12/31 00:00:00</td>
+                </tr>
+                <tr class="h-[40px]">
+                  <td class="w-1/4 text-center">AAPL</td>
+                  <td class="w-1/4 text-center">190</td>
+                  <td class="w-1/4 text-center text-green-500">BUY</td>
+                  <td class="w-1/4 text-center">2121/12/31 00:00:00</td>
+                </tr>
+                <tr class="h-[40px]">
+                  <td class="w-1/4 text-center">AAPL</td>
+                  <td class="w-1/4 text-center">190</td>
+                  <td class="w-1/4 text-center text-green-500">BUY</td>
+                  <td class="w-1/4 text-center">2121/12/31 00:00:00</td>
+                </tr>
+                <tr class="h-[40px]">
+                  <td class="w-1/4 text-center">AAPL</td>
+                  <td class="w-1/4 text-center">190</td>
+                  <td class="w-1/4 text-center text-green-500">BUY</td>
+                  <td class="w-1/4 text-center">2121/12/31 00:00:00</td>
+                </tr>
+                <tr class="h-[40px]">
+                  <td class="w-1/4 text-center">AAPL</td>
+                  <td class="w-1/4 text-center">190</td>
+                  <td class="w-1/4 text-center text-green-500">BUY</td>
+                  <td class="w-1/4 text-center">2121/12/31 00:00:00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
 
         <!-- right -->
         <div class="w-full mt-4 lg:w-[25%] lg:ml-4">
           <div class="bg-card w-full rounded-md p-4 h-[200px]"></div>
           <div class="bg-card w-full rounded-md p-4 h-[300px] mt-4"></div>
-
         </div>
-
       </div>
-
-
-
     </div>
-
   </body>
 </html>
